@@ -23,7 +23,7 @@ BATCH_FILES = {}
 async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [[
-            InlineKeyboardButton('⚚ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ⚚', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('⚚ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ⚚', url=f'http://t.me/TGxMULTIBOT?startgroup=true')
             ],[
             InlineKeyboardButton('✧ sᴜᴘᴘᴏʀᴛ​ ✧', url='https://t.me/MLZ_BOTZ_SUPPORT'),
             InlineKeyboardButton('✧ ᴜᴘᴅᴀᴛᴇs​ ✧', url='https://t.me/Tom_Updates')
@@ -43,7 +43,7 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('⇌ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ⇌', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('⚚ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ⚚', url=f'http://t.me/TGxMULTIBOT?startgroup=true')
             ],[
             InlineKeyboardButton('🧑‍🎓 ᴏᴡɴᴇʀ​', callback_data='owner_info'),
             InlineKeyboardButton('🌿 sᴜᴘᴘᴏʀᴛ​', callback_data='support_grp')
@@ -68,7 +68,7 @@ async def start(client, message):
             
             return     
         buttons = [[
-            InlineKeyboardButton('⇌ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ⇌', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('⚚ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘ ⚚', url=f'http://t.me/TGxMULTIBOT?startgroup=true')
             ],[
             InlineKeyboardButton('🧑‍🎓 ᴏᴡɴᴇʀ​', callback_data='owner_info'),
             InlineKeyboardButton('🌿 sᴜᴘᴘᴏʀᴛ​', callback_data='support_grp')
